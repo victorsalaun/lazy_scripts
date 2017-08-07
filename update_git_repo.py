@@ -1,5 +1,6 @@
 import git
 
+# ADD GIT REPOS HERE
 REPOS = [
 ]
 
@@ -10,9 +11,9 @@ def main():
 
 
 def pull(repo):
-    print("Pulling git repo:" + repo)
+    print("\nPulling git repo:" + repo)
     g = git.cmd.Git(repo)
-    g.pull()
+    print(g.pull())
 
 
 if __name__ == '__main__':
